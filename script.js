@@ -63,7 +63,7 @@ const startGmae = function() {
     }
 }
 
-const holdGame = function() {
+const holdPoint = function() {
     if (playing) {
         // Add current score to active player's score
         scores[activePlayer] += currentScore; 
@@ -81,5 +81,5 @@ const holdGame = function() {
 }
 
 btnRoll.addEventListener('click', startGmae);
-btnHold.addEventListener('click', holdGame);
+btnHold.addEventListener('click', holdPoint);
 btnNew.addEventListener('click', init);
